@@ -1,0 +1,67 @@
+.loginPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  .container {
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px #ccc;
+    .row {
+      &:first-child {
+        margin-top: 0;
+        padding: 0;
+      }
+      padding: 5px 20px;
+      h5 {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        border-bottom: 1px solid #ccc;
+        padding: 5px 20px;
+      }
+      .loginForm {
+        width: 100%;
+        text-align: center;
+        input {
+          border: none;
+          border-radius: 0;
+          border-bottom: 2px solid #e57373;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 13px;
+          font-weight: 300;
+          margin-top: 30px;
+          transition: all 0.7s linear;
+        }
+        input:focus {
+          outline: none;
+          box-shadow: none;
+          border-bottom: 2px solid #2196f3;
+        }
+
+        .btn-save {
+          border: none;
+          border-radius: 0;
+          border-bottom: 2px solid #e57373;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 13px;
+          font-weight: 300;
+          margin-top: 30px;
+          transition: all 0.4s linear;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        .btn-save:hover {
+          background-color: #e57373;
+          color: #fff;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

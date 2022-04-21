@@ -1,0 +1,20 @@
+.profile {
+  width: 100%;
+  height: calc(100% - 40px);
+  .container {
+    .nav-tabs {
+      .nav-link {
+        color: #656565 !important;
+        border: none;
+        border-bottom: 1px solid #dee2e6;
+        cursor: pointer;
+      }
+      .active {
+        border-bottom: 2px solid #dee2e6;
+      }
+    }
+    .tab-content {
+      padding: 30px 20px;
+    }
+  }
+}

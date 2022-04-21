@@ -1,0 +1,60 @@
+.header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1.5px solid #ccc;
+  .logoWrap {
+    flex: 1;
+    margin-left: 30px;
+    .logo {
+      height: 30px;
+    }
+  }
+  .leftMenuWrap {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    .menuItem {
+      cursor: pointer;
+      letter-spacing: 1px;
+      color: #656565;
+      font-size: 13px;
+      margin: 0 20px;
+    }
+    .saveBtn {
+      padding: 3px 20px;
+      border-radius: 20px;
+      border: 2px solid #656565;
+      background-color: #656565;
+      line-height: 0px;
+      margin: 0 10px;
+      svg {
+        color: #fff;
+      }
+      span {
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      &:hover {
+        background-color: #fff;
+        svg {
+          color: #656565;
+        }
+        span {
+          color: #656565;
+        }
+      }
+    }
+  }
+  .rightMenuWrap {
+    padding-left: 30px;
+    padding-right: 30px;
+    .btn-logout {
+      margin-left: 30px;
+      color: #656565;
+    }
+  }
+}

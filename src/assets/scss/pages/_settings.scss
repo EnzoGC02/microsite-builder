@@ -1,0 +1,81 @@
+.settings {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Montserrat';
+    font-weight: 200;
+  }
+
+  .title1 {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  input {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-bottom: 2px solid #64b5f6;
+    }
+    &:disabled {
+      background-color: #fff;
+      cursor: not-allowed;
+    }
+  }
+  .inputPlain {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 13px;
+    border: none;
+    &:disabled {
+      background-color: #fff;
+      cursor: default;
+    }
+    &:hover {
+      border: none;
+    }
+  }
+
+  .container {
+    .row {
+      .nav-tabs {
+        width: 100%;
+        .nav-link {
+          font-family: 'Montserrat';
+          color: #959595;
+          font-weight: 300;
+          border: none;
+          border-bottom: 1px solid #dee2e6;
+          cursor: pointer;
+        }
+        .active {
+          border-bottom: 2px solid #64b5f6;
+        }
+      }
+      .tab-content {
+        width: 100%;
+        padding: 40px 30px !important;
+        .tab-pane {
+          .container {
+            form {
+              .row {
+                padding-top: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

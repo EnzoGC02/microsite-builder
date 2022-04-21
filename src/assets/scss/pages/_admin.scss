@@ -1,0 +1,178 @@
+.admin {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Montserrat';
+    font-weight: 200;
+  }
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  .adminHeader {
+    width: 100%;
+    height: 50px;
+    background-color: #f7f7f7;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .headerLeft {
+      width: 250px;
+      height: 100%;
+      background-color: #37474f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      border-bottom: 1px solid rgba(240, 240, 240, 0.5);
+      h4 {
+        color: #fff;
+      }
+    }
+  }
+  .mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    .sideMenu {
+      width: 250px;
+      height: 100%;
+      background-color: #37474f;
+      padding: 30px 20px;
+      color: #fff;
+      ul {
+        a {
+          color: #fff;
+        }
+        li {
+          margin-bottom: 15px;
+          span {
+            text-transform: uppercase;
+          }
+          ul {
+            margin-left: 20px;
+            font-size: 10px;
+            li {
+              margin-top: 7px;
+              text-transform: uppercase;
+            }
+            li:after {
+              font-family: 'FontAwesome';
+              content: '\f105';
+              float: right;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .mainContainer {
+      flex: 1;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .container {
+        .statsRow {
+          padding-bottom: 20px;
+          border-bottom: 1px solid #ccc;
+          .statsWrap {
+            .statsContainer {
+              height: 150px;
+              background-color: #f1f7fa;
+              padding: 10px 20px;
+              display: flex;
+              flex-direction: column;
+              h6 {
+                padding-bottom: 5px;
+                border-bottom: 1px solid #ccc;
+              }
+              .stats {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h1 {
+                  font-size: 44px !important;
+                  line-height: 120px !important;
+                }
+              }
+            }
+          }
+        }
+        .accountsRow {
+          padding: 50px 30px 20px;
+          border-bottom: 1px solid #ccc;
+          .accountsTitle {
+            width: 100%;
+            font-family: 'Montserrat';
+            font-weight: 200;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+          }
+          .accountsList {
+            width: 100%;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding: 30px 20px;
+            .cnWrap {
+              width: 100%;
+              background-color: #f7f7f7;
+              padding: 10px 30px;
+              border-radius: 5px;
+              border-bottom: 1px solid #ccc;
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .addAccountsRow {
+          .accountsTitle {
+            width: 100%;
+            font-family: 'Montserrat';
+            font-weight: 200;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+          }
+          .addAccountsFormWrap {
+            margin-top: 50px;
+            .addAccountForm {
+              .addAccountsInput {
+                border: none;
+                border-radius: 0;
+                border-bottom: 1px solid #42a5f5;
+                &:hover,
+                &:focus {
+                  outline: none;
+                  box-shadow: none;
+                }
+              }
+              .row {
+                button {
+                  font-size: 12px;
+                  font-family: 'Montserrat';
+                  font-weight: 400;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  background-color: #42a5f5;
+                  padding: 3px 50px;
+                  border: 2px solid #42a5f5;
+                  color: #fff;
+                  border-radius: 25px;
+                  &:hover {
+                    background-color: #fff;
+                    color: #42a5f5;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
